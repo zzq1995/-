@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--     <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <link rel="stylesheet" href="dist/css/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div class="box">
+        <div class="swiper-container" id="swipe">
+            <div class="swiper-wrapper">
+            <!-- 轮播图第一张 -->
+                <div class="swiper-slide">
+                    <div class="top">
+                        <a href="">跳过></a>
+                    </div>
+                    <div class="contain">
+                        <div id="taiyang" >
+                            <div id="yuan" class="ani" swiper-animate-effect="fadeInUpBig"></div>
+                            <div class="zuo">
+                                <div id="zy"></div>
+                            </div>
+                            <div class="you">
+                                <div id="yz"></div>
+                            </div>
+                            <div class="fangzi">
+                                <div id="fang" class="ani" swiper-animate-effect="fadeInDownBig"></div>
+                            </div>
+                        </div>
+                        <div class="cao">
+                            <div class="grass"></div>
+                            <div class="yi" >
+                                <div class="yi-tu" ></div>
+                                <div class="er-tu"></div>
+                                <div class="san-tu"></div>
+                                <div class="si-tu"></div>
+                                <div class="wu-tu"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <p id="p1" class="ani" swiper-animate-effect="lightSpeedIn">原生态</p>
+                        <p id="p2" class="ani" swiper-animate-effect="lightSpeedIn">无污染生态农场</p>
+                        <p id="p3" class="ani" swiper-animate-effect="lightSpeedIn">健康营养有保障</p>
+                    </footer>
+                </div>
+                <!-- 轮播图第二张 -->
+                <div class="swiper-slide">
+                    <div class="top">
+                        <a href="">跳过></a>
+                    </div>
+                    <div class="contain">
+                        <div class="xiaoche">
+                            <p class="animated swing infinite">鲜</p>
+                        </div>
+                        <div class="chetou">
+                                <div class="ct"></div>
+                        </div>
+                        <div class="lunzi">
+                            <div class="fen">
+                                <div class="lun">
+                                    <div class="shi"></div>
+                                </div>
+                                <div class="gun"></div>
+                                <div class="lun">
+                                    <div class="shi"></div>
+                                </div>
+                             </div>
+                            <div class="fen2">
+                                <div class="lun">
+                                    <div class="shi"></div>
+                                </div>
+                                <div class="gun"></div>
+                                <div class="lun">
+                                    <div class="shi"></div>
+                                </div>
+                            </div>
+                            <div class="fen3">
+                                <div class="lun">
+                                    <div class="shi"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <footer>
+                        <p id="p1" class="ani" swiper-animate-effect="fadeInRightBig">专业配送</p>
+                        <p id="p2" class="ani" swiper-animate-effect="fadeInRightBig">最专业的配送团队</p>
+                        <p id="p3" class="ani" swiper-animate-effect="fadeInRightBig">保证货物以最快的速度送至您手上</p>
+                    </footer>
+                </div>
+                <!-- 轮播图第三张 -->
+                <div class="swiper-slide">
+                    <div class="top">
+                        <a href="">跳过></a>
+                    </div>
+                    <div class="contain">
+                        <div class="hs"></div>
+                        <div class="he">
+                            <div class="lv"></div>
+                            <div class="shuang">
+                                <div class="qiu1"></div>
+                                <div class="qiu2"></div>
+                            </div>
+                        </div>
+                        <ul class="qian">
+                            <li id="q1" class="animated swing infinite"></li>
+                            <li id="q2" class="animated swing infinite"></li>
+                            <li id="q3" class="animated swing infinite"></li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <p id="p1" class="ani" swiper-animate-effect="slideInLeft">丰富折扣</p>
+                        <p id="p2" class="ani" swiper-animate-effect="slideInRight">邀请好友获取优惠券</p>
+                        <p id="p3" class="ani" swiper-animate-effect="slideInRight">每周大折扣助您狂欢</p>
+                    </footer>
+                    <div class="bottom">
+                        <div id="dainji" class="animated pulse infinite">
+                        <a href="###"><p>立即体验</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next" id="button-next"></div>
+    <div class="swiper-button-prev" id="button-prev"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="dist/js/swiper.min.js"></script>
+        <script src="dist/js/swiper.animate.min.js"></script>
+    </div>
+</body>
+    <script type="text/javascript">
+    //  var swiper = new Swiper('.swiper-container', {
+    //   slidesPerView: 1,
+    //   spaceBetween: 30,
+    //   loop: true,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+    // });
+    window.onload=function(){
+            var swipe = document.getElementById("swipe");
+            var scale = window.screen.height / window.screen.width;
+            swipe.style.height = document.body.clientWidth * scale + "px";
+        }
+        var mySwiper = new Swiper('.swiper-container',{
+            // direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        on:{
+      init: function(){
+        swiperAnimateCache(this); //隐藏动画元素
+        swiperAnimate(this); //初始化完成开始动画
+      },
+      slideChange: function(){
+        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+      }
+    }
+        });
+    </script>
+
+</html>
